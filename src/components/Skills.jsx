@@ -13,7 +13,7 @@ const Skills = () => {
     useEffect(() => {
         const fetchSkills = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/skills');
+                const res = await axios.get('https://hanif-dev-server.vercel.app/api/skills');
                 setSkills(res.data);
                 setLoading(false);
             } catch (error) {
