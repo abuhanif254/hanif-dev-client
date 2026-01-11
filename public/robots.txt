@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
+
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://hanif.dev/sitemap.xml
+Sitemap: https://willowy-mooncake-34f66d.netlify.app/sitemap.xml
