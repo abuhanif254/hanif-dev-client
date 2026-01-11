@@ -48,10 +48,10 @@ const Footer = () => {
                         </p>
                         <div className="flex space-x-4">
                             {[
-                                { icon: <FaGithub />, href: 'https://github.com' },
-                                { icon: <FaLinkedin />, href: 'https://linkedin.com' },
-                                { icon: <FaTwitter />, href: 'https://twitter.com' },
-                                { icon: <FaFacebook />, href: 'https://facebook.com' }
+                                { icon: <FaGithub />, href: 'https://github.com/abuhanif254' },
+                                { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/md-abu-hanif-mia' },
+                                { icon: <FaTwitter />, href: 'https://x.com/MohammadBitull1' },
+                                { icon: <FaFacebook />, href: 'https://www.facebook.com/bitulla' }
                             ].map((social, index) => (
                                 <a
                                     key={index}
