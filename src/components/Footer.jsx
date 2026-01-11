@@ -146,7 +146,7 @@ const Footer = () => {
                             <a key={link.name} href={link.href} className="hover:text-cyan-400 transition-colors">{link.name}</a>
                         ))}
                         <p className="flex items-center">
-                            Made with <FaHeart className="mx-1 text-red-500 animate-pulse" /> in React
+                            Made By <FaHeart className="mx-1 text-red-500 animate-pulse" /> Abu Hanif (Mohammad Baitullah)
                         </p>
                     </div>
                 </motion.div>
