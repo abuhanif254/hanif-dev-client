@@ -27,7 +27,7 @@ export default function SettingsPage() {
 
     const fetchConfig = async () => {
         try {
-            const res = await axios.get('http://localhost:5000/api/config');
+            const res = await axios.get('https://hanif-dev-server.vercel.app/api/config');
             // Ensure nested objects exist to avoid undefined errors
             const data = res.data;
             if (!data.socialLinks) data.socialLinks = {};
