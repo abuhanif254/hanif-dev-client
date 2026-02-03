@@ -4,4 +4,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://willowy-mooncake-34f66d.netlify.app/sitemap.xml
+Sitemap: https://mdabuhanifmiadeveloper.netlify.ap/sitemap.xml
