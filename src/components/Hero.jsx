@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Hero = () => {
     const el = useRef(null);
@@ -43,12 +44,12 @@ const Hero = () => {
                     A passionate full-stack developer specializing in modern web technologies. I build exceptional digital experiences that are fast, accessible, and visually appealing.
                 </p>
                 <div className="flex space-x-4">
-                    <a href="#contact" className="bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-lg font-medium shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:-translate-y-1 transition-all duration-300">
+                    <Link href="/contact" className="bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-lg font-medium shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:-translate-y-1 transition-all duration-300">
                         Hire Me
-                    </a>
-                    <a href="#projects" className="border border-slate-600 bg-slate-900/50 backdrop-blur-sm text-white px-8 py-3 rounded-lg font-medium hover:border-cyan-400 hover:text-cyan-400 hover:-translate-y-1 transition-all duration-300">
+                    </Link>
+                    <Link href="/projects" className="border border-slate-600 bg-slate-900/50 backdrop-blur-sm text-white px-8 py-3 rounded-lg font-medium hover:border-cyan-400 hover:text-cyan-400 hover:-translate-y-1 transition-all duration-300">
                         View Work
-                    </a>
+                    </Link>
                 </div>
             </motion.div>
             <motion.div
