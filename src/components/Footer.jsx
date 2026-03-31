@@ -2,17 +2,18 @@
 
 import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaHeart, FaArrowRight, FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const footerLinks = {
         quickLinks: [
-            { name: 'Home', href: '#home' },
-            { name: 'About', href: '#about' },
-            { name: 'Skills', href: '#skills' },
-            { name: 'Projects', href: '#projects' },
-            { name: 'Contact', href: '#contact' }
+            { name: 'Home', href: '/' },
+            { name: 'About', href: '/about' },
+            { name: 'Skills', href: '/skills' },
+            { name: 'Projects', href: '/projects' },
+            { name: 'Contact', href: '/contact' }
         ],
         services: [
             { name: 'Web Development', href: '#' },
@@ -77,10 +78,10 @@ const Footer = () => {
                         <ul className="space-y-3">
                             {footerLinks.quickLinks.map((link) => (
                                 <li key={link.name}>
-                                    <a href={link.href} className="text-gray-400 hover:text-cyan-400 transition-colors flex items-center group">
+                                    <Link href={link.href} className="text-gray-400 hover:text-cyan-400 transition-colors flex items-center group">
                                         <FaArrowRight className="mr-2 text-xs opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
                                         {link.name}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

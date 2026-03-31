@@ -4,4 +4,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://mdabuhanifmiadeveloper.netlify.ap/sitemap.xml
+Sitemap: https://mdabuhanifmiadeveloper.netlify.app/sitemap.xml

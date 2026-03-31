@@ -41,21 +41,7 @@ const SearchBar = ({ isOpen, onClose }) => {
         if (item.external) {
             window.open(item.path, '_blank');
         } else {
-            if (item.path.startsWith('/#')) {
-                const id = item.path.substring(2);
-                const element = document.getElementById(id);
-                if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                    router.push('/');
-                    setTimeout(() => {
-                        const el = document.getElementById(id);
-                        el?.scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                }
-            } else {
-                router.push(item.path);
-            }
+            router.push(item.path);
         }
         onClose();
     };

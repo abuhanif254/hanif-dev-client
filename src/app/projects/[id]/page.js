@@ -44,10 +44,10 @@ export default function ProjectDetail() {
             <div className="min-h-screen bg-darker flex flex-col items-center justify-center">
                 <h1 className="text-4xl font-bold text-white mb-4">Project Not Found</h1>
                 <button
-                    onClick={() => router.push('/')}
+                    onClick={() => router.push('/projects')}
                     className="flex items-center text-cyan-400 hover:text-white transition-colors"
                 >
-                    <FaArrowLeft className="mr-2" /> Back to Home
+                    <FaArrowLeft className="mr-2" /> Back to Projects
                 </button>
             </div>
         );
@@ -61,11 +61,11 @@ export default function ProjectDetail() {
                     <motion.button
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        onClick={() => router.push('/')}
+                        onClick={() => router.push('/projects')}
                         className="flex items-center text-cyan-400 hover:text-white transition-colors mb-8 group"
                     >
                         <FaArrowLeft className="mr-2 transform group-hover:-translate-x-1 transition-transform" />
-                        Back to Home
+                        Back to Projects
                     </motion.button>
 
                     <motion.div
